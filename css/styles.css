@@ -1,0 +1,435 @@
+.about-me,
+.tech-skills,
+.reasons-to-employ {
+  background-color: #F1FAEE;
+}
+
+.projects,
+.social {
+  background-color: #dfdfdf;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+::selection {
+  background: #D90429;
+  /* WebKit/Blink Browsers */
+}
+
+::-moz-selection {
+  background: #D90429;
+  /* Gecko Browsers */
+}
+
+/*Fonts*/
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Share Tech Mono", monospace;
+  color: #333;
+}
+
+p, li, a {
+  font-family: "Cutive Mono", monospace;
+  line-height: 1.5;
+  color: #222;
+}
+
+/* Main Navbar*/
+#hamButton {
+  display: none;
+}
+
+.main-nav,
+.little-nav {
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75));
+  border-bottom: solid 1px #F1FAEE;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 100;
+}
+
+.main-nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.flex-box {
+  text-transform: uppercase;
+  padding: 1rem;
+  text-decoration: none;
+  color: #F1FAEE;
+}
+
+.flex-box li {
+  transition: all 0.3s ease 0s;
+  color: #F1FAEE;
+}
+
+.flex-box li:hover {
+  color: #E63946;
+}
+
+.flex-container {
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+  align-items: center;
+}
+
+.little-nav,
+.little-nav-flex-container {
+  display: none;
+}
+
+/*Main Header*/
+.main-header {
+  background: linear-gradient(rgba(29, 53, 87, 0.6), rgba(0, 0, 0, 0.2)), url(../images/hero.png) center center no-repeat;
+  background-size: cover;
+  height: 100vh;
+  min-height: 500px;
+  padding-top: 35vh;
+}
+
+.main-header-container {
+  max-width: 55%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.main-header-content {
+  text-align: left;
+  flex: 1 50%;
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex-basis: 50%;
+}
+
+.main-header-content h1,
+.main-header-content p,
+.main-header-content h4 {
+  color: #F1FAEE;
+}
+
+.main-header-side-content {
+  background-color: rgba(0, 0, 0, 0.75);
+  display: block;
+  height: 100%;
+  border-radius: 10px;
+  padding: 1.5rem;
+  text-align: center;
+  flex: 1 50%;
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex-basis: 50%;
+}
+
+.more-info {
+  color: #F1FAEE;
+  font-size: 1.25rem;
+}
+
+.header-button {
+  text-decoration: none;
+  margin-top: 0.5rem;
+  padding: 0.5rem;
+  display: inline-block;
+  width: 100%;
+  color: #457B9D;
+  border: 1px solid #457B9D;
+  font-family: "Share Tech Mono", monospace;
+  transition: 0.5s;
+}
+
+.header-button:hover {
+  background: #457B9D;
+  color: #F1FAEE;
+}
+
+.small-header-container {
+  width: 100%;
+  text-align: center;
+  padding-top: 2.5rem;
+}
+
+.i-header-color {
+  color: #F1FAEE;
+}
+
+/* Main Styles */
+.about-me,
+.projects,
+.tech-skills,
+.social,
+.reasons-to-employ,
+.main-footer {
+  padding: 6% 15%;
+}
+
+hr {
+  width: 25rem;
+  margin: 1rem 0;
+  display: block;
+  height: 1px;
+  border-top: 2px solid #E63946;
+  color: #E63946;
+}
+
+/* About Me Section Styles */
+.summary-block {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.summary-container,
+.summary-image-container {
+  flex: 1 50%;
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex-basis: 50%;
+}
+
+.summary-container header,
+.summary-container h5,
+.summary-container p,
+.summary-container a {
+  margin: 1rem 0;
+}
+
+.summary-container a {
+  background: #E63946;
+  color: #F1FAEE;
+  font-family: "Share Tech Mono", monospace;
+  display: block;
+  padding: 0.5rem;
+  text-decoration: none;
+  text-align: center;
+  width: 60%;
+  transition: 0.5s;
+  border: 1px solid #E63946;
+}
+
+.summary-container a:hover {
+  color: #E63946;
+  background: #F1FAEE;
+}
+
+.summary-image-container img {
+  display: block;
+  margin: 0 auto;
+  height: auto;
+  width: 100%;
+}
+
+/* Projects Section Styles */
+.projects-container {
+  display: grid;
+  grid-gap: 1rem;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.project-item {
+  border-radius: 10px;
+  margin: 1rem auto;
+}
+
+.project-image img,
+.project-image-overlay {
+  border-radius: 10px;
+}
+
+.project-image {
+  position: relative;
+}
+
+.project-image img {
+  display: block;
+  height: auto;
+  width: 100%;
+}
+
+.project-image-overlay {
+  background: rgba(0, 0, 0, 0.5) url(../images/eye.png) center center no-repeat;
+  border-radius: 10px;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.project-image-overlay:hover {
+  opacity: 1;
+}
+
+.project-desc {
+  padding: 1rem;
+}
+
+/* Tech Skills */
+.tech-skills-container {
+  display: grid;
+  grid-template-rows: repeat(2, 1fr);
+  grid-template-columns: 25% 25% 25% 25%;
+  align-items: center;
+  grid-gap: 2px;
+  justify-content: center;
+  grid-template-areas: "one two two three" "four four five five" "six six seven seven" "eight eight eight eight";
+}
+
+.item-1 {
+  grid-area: one;
+}
+
+.item-2 {
+  grid-area: two;
+}
+
+.item-3 {
+  grid-area: three;
+}
+
+.item-4 {
+  grid-area: four;
+}
+
+.item-5 {
+  grid-area: five;
+}
+
+.item-6 {
+  grid-area: six;
+}
+
+.item-7 {
+  grid-area: seven;
+}
+
+.item-8 {
+  grid-area: eight;
+}
+
+.tech-skills-container p {
+  background-color: #457B9D;
+  text-align: center;
+  color: #F1FAEE;
+  padding: 0.5rem;
+  margin: 0.7rem 0;
+  border-radius: 2px;
+  font-weight: bold;
+  position: relative;
+  transition: 0.5s;
+  border: 1px solid #457B9D;
+}
+
+.tech-skills-container p:hover {
+  color: #457B9D;
+  background-color: #F1FAEE;
+  border: 1px solid #457B9D;
+}
+
+/* Reason to Employ */
+.zdog-canvas {
+  max-width: 150px;
+}
+
+@media only screen and (max-width: 768px) {
+  #hamButton {
+    display: block;
+  }
+
+  .main-nav, .flex-container {
+    display: none;
+  }
+
+  .little-nav {
+    display: block;
+  }
+
+  .little-nav div {
+    display: flex;
+    flex-direction: row;
+    text-decoration: none;
+    justify-content: space-between;
+  }
+
+  .little-nav-flex-container {
+    display: none;
+    width: 100%;
+    flex-direction: column;
+    list-style-type: none;
+    color: #F1FAEE;
+  }
+
+  .about-me,
+.projects,
+.tech-skills,
+.social,
+.reasons-to-employ,
+.main-footer {
+    padding: 6% 8%;
+  }
+
+  .main-header {
+    padding-top: 15vh;
+    height: 50vh;
+  }
+
+  .main-header-container {
+    flex-direction: column;
+  }
+
+  .main-header-content {
+    padding-bottom: 1rem;
+  }
+
+  .main-header-side-content {
+    display: none;
+  }
+
+  .summary-block {
+    flex-direction: column;
+  }
+
+  .summary-container,
+.summary-container a,
+.projects-content,
+.tech-block,
+.social-content-container,
+.reasons-content,
+.reasons-container {
+    text-align: center;
+    margin: 0 auto;
+  }
+
+  hr {
+    width: 100%;
+  }
+
+  .summary-image-container img {
+    margin-top: 1rem;
+  }
+
+  .projects-container {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .tech-skills-container {
+    grid-template-areas: "one one two two" "three three four four" "five five six six" "seven seven seven seven" "eight eight eight eight";
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */
