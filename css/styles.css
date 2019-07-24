@@ -4,8 +4,8 @@
   background-color: #F1FAEE;
 }
 
-.projects,
-.social {
+.about-me,
+.tech-skills {
   background-color: #dfdfdf;
 }
 
@@ -36,9 +36,10 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 p, li, a {
-  font-family: "Cutive Mono", monospace;
+  font-family: "Fira Mono", monospace;
   line-height: 1.5;
   color: #222;
+  font-size: 0.9rem;
 }
 
 /* Main Navbar*/
@@ -137,7 +138,7 @@ p, li, a {
 
 .more-info {
   color: #F1FAEE;
-  font-size: 1.25rem;
+  font-size: 1.1rem;
 }
 
 .header-button {
@@ -323,7 +324,7 @@ hr {
 }
 
 .tech-skills-container p {
-  background-color: #457B9D;
+  background-color: #E63946;
   text-align: center;
   color: #F1FAEE;
   padding: 0.5rem;
@@ -332,18 +333,100 @@ hr {
   font-weight: bold;
   position: relative;
   transition: 0.5s;
-  border: 1px solid #457B9D;
+  border: 1px solid #E63946;
 }
 
 .tech-skills-container p:hover {
-  color: #457B9D;
+  color: #E63946;
   background-color: #F1FAEE;
-  border: 1px solid #457B9D;
+  border: 1px solid #E63946;
+}
+
+/* Social Area */
+.social, .social-links {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.social {
+  justify-content: space-between;
+}
+
+.social-links a {
+  text-decoration: none;
+}
+
+.social-links i {
+  display: block;
+  border: 2px solid #E63946;
+  padding: 0.75rem;
+  margin: 0.5rem;
+  font-size: 2rem;
+  color: #E63946;
+  border-radius: 50%;
+  transition: 0.5s;
+}
+
+.social-links i:hover {
+  color: #F1FAEE;
+  background-color: #E63946;
 }
 
 /* Reason to Employ */
 .zdog-canvas {
   max-width: 150px;
+}
+
+.reasons-block {
+  display: flex;
+  flex-flow: row wrap;
+  text-align: center;
+  justify-content: space-between;
+}
+
+.reasons-block .reasons-container {
+  margin: 2rem 1rem;
+  flex: 1 28%;
+}
+
+.reasons-container i {
+  width: 150px;
+  height: 75px;
+  color: #E63946;
+  padding-top: 0.5rem;
+  margin-top: 0.25rem;
+}
+
+/* Footer */
+.main-footer {
+  background: linear-gradient(rgba(29, 53, 87, 0.9), rgba(29, 53, 87, 0.5)), url(../images/footer.jpg) center center no-repeat;
+  background-size: cover;
+}
+
+.main-footer-container {
+  display: flex;
+  flex-direction: row;
+}
+
+.main-footer-content {
+  flex: 1 60%;
+  padding-right: 2rem;
+}
+
+.main-footer-content h2,
+.main-footer-content p,
+.main-footer address h2,
+.main-footer address p,
+footer p {
+  color: #F1FAEE;
+}
+
+.footer-contact, .footer-container {
+  margin: 1rem 0;
+}
+
+.footer-container a {
+  text-decoration: none;
 }
 
 @media only screen and (max-width: 768px) {
@@ -380,7 +463,7 @@ hr {
 .social,
 .reasons-to-employ,
 .main-footer {
-    padding: 6% 8%;
+    padding: 10% 10%;
   }
 
   .main-header {
@@ -429,6 +512,18 @@ hr {
 
   .tech-skills-container {
     grid-template-areas: "one one two two" "three three four four" "five five six six" "seven seven seven seven" "eight eight eight eight";
+  }
+
+  .social {
+    justify-content: center;
+  }
+
+  .reasons-block {
+    flex-flow: column wrap;
+  }
+
+  .main-footer-container {
+    flex-direction: column;
   }
 }
 

@@ -2,13 +2,12 @@
 $theme-color-red: #E63946;
 $theme-color-white: #F1FAEE;
 $theme-color-gray: #dfdfdf;
-$theme-color-lb: #A8DADC;
 $theme-color-blue: #457B9D;
 $theme-color-db: #1D3557;
 
 // Font Variables
 $header-font: 'Share Tech Mono', monospace;
-$content-font: 'Cutive Mono', monospace;
+$content-font: 'Fira Mono', monospace;
 
 // Theme Color Layout
 .about-me,
@@ -17,8 +16,8 @@ $content-font: 'Cutive Mono', monospace;
     background-color: $theme-color-white;
 }
 
-.projects, 
-.social {
+.about-me, 
+.tech-skills {
     background-color: $theme-color-gray;
 }
 
@@ -52,6 +51,7 @@ p, li, a {
     font-family: $content-font;
     line-height: 1.5;
     color: #222;
+    font-size: .9rem;
 }
 
 
@@ -155,7 +155,7 @@ p, li, a {
 
 .more-info {
     color: $theme-color-white;
-    font-size: 1.25rem;
+    font-size: 1.1rem;
 }
 
 .header-button {
@@ -352,7 +352,7 @@ hr {
 }
 
 .tech-skills-container p {
-    background-color: $theme-color-blue;
+    background-color: $theme-color-red;
     text-align: center;
     color: $theme-color-white;
     padding: .5rem;
@@ -361,20 +361,106 @@ hr {
     font-weight: bold;
     position: relative;
     transition: .5s;
-    border: 1px solid $theme-color-blue;
+    border: 1px solid $theme-color-red;
     
 }
 
 .tech-skills-container p:hover {
-    color: $theme-color-blue;
+    color: $theme-color-red;
     background-color: $theme-color-white;
-    border: 1px solid $theme-color-blue;
+    border: 1px solid $theme-color-red;
+}
+
+/* Social Area */
+
+
+
+.social, .social-links {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.social {
+    justify-content: space-between;
+}
+
+.social-links a {
+    text-decoration: none;
+}
+
+.social-links i {
+    display: block;
+    border: 2px solid $theme-color-red;
+    padding: .75rem;
+    margin: .5rem;
+    font-size: 2rem;
+    color: $theme-color-red;
+    border-radius: 50%;
+    transition: .5s;
+}
+
+.social-links i:hover {
+    color: $theme-color-white;
+    background-color: $theme-color-red;
 }
 
 
 /* Reason to Employ */
 .zdog-canvas {
     max-width: 150px;
+}
+
+.reasons-block {
+    display: flex;
+    flex-flow: row wrap;
+    text-align: center;
+    justify-content: space-between;
+}
+
+.reasons-block .reasons-container {
+    margin: 2rem 1rem;
+    flex: 1 28%;
+}
+
+.reasons-container i {
+    width: 150px;
+    height: 75px;
+    color: $theme-color-red;
+    padding-top: .5rem;
+    margin-top: .25rem;
+}
+
+/* Footer */
+
+.main-footer {
+    background: linear-gradient(rgba(29, 53, 87, 0.9), rgba(29, 53, 87, 0.5)), url(../images/footer.jpg) center center no-repeat;
+    background-size: cover;
+}
+
+.main-footer-container {
+    display: flex;
+    flex-direction: row;
+}
+
+.main-footer-content {
+    flex: 1 60%;
+    padding-right: 2rem;
+}
+
+.main-footer-content h2,
+.main-footer-content p, 
+.main-footer address h2,
+.main-footer address p,
+footer p {
+    color: $theme-color-white;
+}
+
+.footer-contact, .footer-container {
+    margin: 1rem 0;
+}
+
+.footer-container a {
+    text-decoration: none;
 }
 
 @media only screen and (max-width: 768px) {
@@ -412,7 +498,7 @@ hr {
     .social, 
     .reasons-to-employ, 
     .main-footer {
-        padding: 6% 8%;
+        padding: 10% 10%;
     }
 
     .main-header {
@@ -464,5 +550,16 @@ hr {
         "seven seven seven seven"
         "eight eight eight eight"
     }
-    
+
+    .social {
+        justify-content: center;
+    }
+
+    .reasons-block {
+        flex-flow: column wrap;
+    }
+
+    .main-footer-container {
+        flex-direction: column;
+    }
 }
