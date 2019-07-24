@@ -17,7 +17,8 @@ $content-font: 'Fira Mono', monospace;
 }
 
 .about-me, 
-.tech-skills {
+.tech-skills,
+.reasons-to-employ {
     background-color: $theme-color-gray;
 }
 
@@ -461,6 +462,12 @@ footer p {
 
 .footer-container a {
     text-decoration: none;
+}
+
+.copyright {
+    padding-top: 2rem;
+    text-align: center;
+    font-weight: bold;
 }
 
 @media only screen and (max-width: 768px) {

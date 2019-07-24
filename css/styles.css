@@ -5,7 +5,8 @@
 }
 
 .about-me,
-.tech-skills {
+.tech-skills,
+.reasons-to-employ {
   background-color: #dfdfdf;
 }
 
@@ -427,6 +428,12 @@ footer p {
 
 .footer-container a {
   text-decoration: none;
+}
+
+.copyright {
+  padding-top: 2rem;
+  text-align: center;
+  font-weight: bold;
 }
 
 @media only screen and (max-width: 768px) {
