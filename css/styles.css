@@ -64,9 +64,13 @@ p, li, a {
   justify-content: space-between;
 }
 
+.main-nav .logo-pic {
+  width: 110px;
+}
+
 .flex-box {
   text-transform: uppercase;
-  padding: 1rem;
+  padding: 0 1rem;
   text-decoration: none;
   color: #F1FAEE;
 }
@@ -443,6 +447,10 @@ footer p {
 
   .main-nav, .flex-container {
     display: none;
+  }
+
+  .little-nav #little-logo {
+    width: 60px;
   }
 
   .little-nav {
