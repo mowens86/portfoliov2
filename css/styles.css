@@ -283,6 +283,8 @@ hr {
 
 .project-desc {
   padding: 1rem;
+  border-bottom: 2px solid #E63946;
+  border-radius: 5px;
 }
 
 /* Tech Skills */
