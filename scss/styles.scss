@@ -486,7 +486,8 @@ footer p {
 
 @media only screen and (max-width: 768px) {
 
-    body {
+    .aos-wrapper {
+        position: relative;
         overflow-x: hidden;
     }
     
