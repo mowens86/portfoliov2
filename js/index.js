@@ -24,3 +24,10 @@ const navToggle = () => {
     // Otherwise display flex
     : navContainer.style.display = "flex";
 };
+
+
+// Update year
+const currentYear = document.querySelector('.currentYear');
+let date = new Date();
+let year = date.getFullYear();
+currentYear.innerHTML = year;
