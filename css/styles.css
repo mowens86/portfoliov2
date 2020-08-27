@@ -307,7 +307,12 @@ hr {
   align-items: center;
   grid-gap: 2px;
   justify-content: center;
-  grid-template-areas: "one two two three" "four four five five" "six six seven seven" "eight eight nine nine" "ten ten ten ten";
+  grid-template-areas: 
+  "one two two three" 
+  "four four five five" 
+  "six six seven seven" 
+  "eight eight nine nine" 
+  "ten ten ten ten";
 }
 
 .item-1 {
