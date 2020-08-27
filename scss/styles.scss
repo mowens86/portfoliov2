@@ -335,7 +335,8 @@ hr {
     "one two two three"
     "four four five five"
     "six six seven seven"
-    "eight eight eight eight";
+    "eight eight nine nine"
+    "ten ten ten ten";
 }
 
 .item-1 {
@@ -368,6 +369,14 @@ hr {
 
 .item-8 {
     grid-area: eight;
+}
+
+.item-9 {
+    grid-area: nine;
+}
+
+.item-10 {
+    grid-area: ten;
 }
 
 .tech-skills-container p {
@@ -584,7 +593,8 @@ footer p {
         "three three four four"
         "five five six six"
         "seven seven seven seven"
-        "eight eight eight eight"
+        "eight eight nine nine"
+        "ten ten ten ten";
     }
 
     .social {
